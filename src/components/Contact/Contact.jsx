@@ -11,29 +11,19 @@ const Contact = () => {
         </p>
 
         <div className="contact-links">
-          <a href="mailto:rakesh@example.com" target="_blank" rel="noreferrer">
-            📧 rakesh@example.com
+          <a
+            href="mailto:rakeshkodathala@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            📧 rakeshkodathala@gmail.com
           </a>
           <a
-            href="https://www.linkedin.com/in/rakesh-kumar-reddy-kodathala-107740199/"
+            href="https://www.linkedin.com/in/rakesh-kumar-44304b324/"
             target="_blank"
             rel="noreferrer"
           >
             💼 LinkedIn
-          </a>
-          <a
-            href="https://github.com/rakeshkodathala"
-            target="_blank"
-            rel="noreferrer"
-          >
-            🐙 GitHub
-          </a>
-          <a
-            href="https://leetcode.com/Rocky_10/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            🧠 LeetCode
           </a>
         </div>
       </div>

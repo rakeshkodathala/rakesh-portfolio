@@ -4,14 +4,33 @@ import "./Project.css";
 
 const projects = [
   {
+    title: "ChatApp",
+    description:
+      "Point-of-Sale application for brand & inventory management. Supports invoicing, reporting, and CRUD operations.",
+    image: "/src/assets/chatapp.png",
+    tech: ["Spring Boot", "Hibernate", "Thymeleaf", "MySQL"],
+    github: "https://github.com/artiam99/Increff_Point_of_Sale",
+    demo: "",
+  },
+  {
+    title: "YoutubeClone",
+    description:
+      "Point-of-Sale application for brand & inventory management. Supports invoicing, reporting, and CRUD operations.",
+    image: "/pos.jpg",
+    tech: ["Spring Boot", "Hibernate", "Thymeleaf", "MySQL"],
+    github: "https://github.com/artiam99/Increff_Point_of_Sale",
+    demo: "",
+  },
+  {
     title: "Nine Men's Morris Game",
     description:
       "Real-time strategic board game with multiplayer functionality. Players aim to form 'mills' and eliminate opponent's pieces.",
-    image: "/NineMenMorrisImage.jpg",
+    image: "/src/assets/nine-men.jpeg",
     tech: ["Next.js", "Node.js", "React", "MongoDB", "Socket.IO"],
     github: "https://github.com/rakeshkodathala/Nine-Men-Morris-game",
     demo: "https://your-demo-link.com",
   },
+
   {
     title: "POS System - Increff",
     description:
