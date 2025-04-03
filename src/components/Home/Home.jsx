@@ -1,13 +1,15 @@
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
+import TypingText from "../TypingText/TypingText"; // adjust if needed
 import "./Home.css";
 
 const Home = () => {
   return (
     <section id="home" className="home">
-      {/* 🔵 Animated blob background */}
+      {/* 🔵 Glowing animated blob */}
       <div className="home-blob" />
 
+      {/* 👋 Hero title */}
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -17,17 +19,14 @@ const Home = () => {
         Hi, I'm <span>Rakesh Kumar</span>
       </motion.h1>
 
-      {/* ✨ Animated subtitle instead of Typewriter */}
-      <motion.h3
-        className="subtitle"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.4, duration: 0.6 }}
-      >
-        Software Engineer · Full Stack Developer · Tech Enthusiast
-      </motion.h3>
+      {/* ✨ Typewriter subtitle */}
+      <TypingText
+        texts={["Software Engineer", "Full Stack Developer", "Tech Enthusiast"]}
+        speed={80}
+        pause={1500}
+      />
 
+      {/* 🧑‍🎓 Description */}
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -38,7 +37,7 @@ const Home = () => {
         software development and building cool stuff.
       </motion.p>
 
-      {/* 🎓 Resume buttons */}
+      {/* 📄 Resume Buttons */}
       <motion.div
         className="resume-buttons"
         initial={{ opacity: 0, y: 20 }}
@@ -54,7 +53,6 @@ const Home = () => {
         >
           View Resume
         </a>
-
         <a
           href="/resume.pdf"
           download="Rakesh_Kumar_Resume.pdf"
@@ -77,6 +75,7 @@ const Home = () => {
           href="https://github.com/rakeshkodathala"
           target="_blank"
           rel="noreferrer"
+          title="GitHub"
         >
           <FaGithub />
         </a>
@@ -84,10 +83,11 @@ const Home = () => {
           href="https://www.linkedin.com/in/rakesh-kumar-reddy-kodathala-107740199/"
           target="_blank"
           rel="noreferrer"
+          title="LinkedIn"
         >
           <FaLinkedin />
         </a>
-        <a href="mailto:rakesh@example.com">
+        <a href="mailto:rakesh@example.com" title="Email">
           <FaEnvelope />
         </a>
       </motion.div>
