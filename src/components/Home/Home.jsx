@@ -1,6 +1,6 @@
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Typewriter from "typewriter-effect";
+//import Typewriter from "typewriter-effect";
 import "./Home.css";
 
 const Home = () => {
