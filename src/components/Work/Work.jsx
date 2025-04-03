@@ -4,28 +4,52 @@ import "./Work.css";
 
 const workExperience = [
   {
-    role: "Software Engineer",
-    company: "Mindtree",
-    year: "2021 – 2022",
+    role: "Software Developer",
+    company: "HCL",
+    year: "2025",
     icon: <FaBriefcase />, // 🎯 Add this
-    logo: "/mindtree.png",
-    location: "Chennai, India",
+    logo: "/src/assets/hcl.jpeg",
+    location: "Irving, TX",
     duration: "Jun 2021 – May 2022",
     description:
       "Worked with Lincoln Financial Group. Built backend APIs and enterprise-level features using Java, Spring Boot, and MySQL.",
-    tech: ["Java", "Spring Boot", "MySQL"],
+    tech: ["Java", "Spring Boot", "React", "NodeJS", "MySQL"],
   },
   {
-    role: "Backend Developer Intern",
-    company: "Increff",
-    year: "2021",
+    role: "Software Engineer Intern",
+    company: "Zinnia LLC",
+    year: "2023",
     icon: <FaLaptopCode />, // 💻 Add this
-    logo: "/increff.jpg",
-    location: "Bengaluru, India",
-    duration: "Jan 2021 – May 2021",
+    logo: "/src/assets/Zinnia.jpeg",
+    location: "Topeka, KS",
+    duration: "May 2023 – Dec 2023",
     description:
       "Developed POS system and backend features for StoreJini platform using Spring, Hibernate, Thymeleaf, and MySQL.",
-    tech: ["Spring", "Hibernate", "Thymeleaf", "MySQL"],
+    tech: ["React", ".NET", "JavaScript", "MySQL"],
+  },
+  {
+    role: "Software Engineer",
+    company: "Mindtree",
+    year: "2021",
+    icon: <FaLaptopCode />, // 💻 Add this
+    logo: "/src/assets//mindtree.png",
+    location: "Hyderabad, India",
+    duration: "Jun 2021 – May 2022",
+    description:
+      "Developed POS system and backend features for StoreJini platform using Spring, Hibernate, Thymeleaf, and MySQL.",
+    tech: ["Spring", "Hibernate", "Java", "MySQL"],
+  },
+  {
+    role: "Junior Software Engineer",
+    company: "OLX",
+    year: "2020",
+    icon: <FaLaptopCode />, // 💻 Add this
+    logo: "/src/assets//olx.jpeg",
+    location: "Hyderabad, India",
+    duration: "Nov 2019 – May 2021",
+    description:
+      "Developed POS system and backend features for StoreJini platform using Spring, Hibernate, Thymeleaf, and MySQL.",
+    tech: ["NodeJS", "JavaScript", "Java", "MySQL"],
   },
 ];
 

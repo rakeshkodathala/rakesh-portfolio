@@ -7,3 +7,10 @@ body {
   background-color: white;
   color: #1a1a1a;
 }
+
+
+img.favicon {
+  width: 32px; /* Adjust as needed */
+  height: 32px;
+  border-radius: 50%;
+}

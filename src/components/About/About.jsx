@@ -4,13 +4,17 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-container">
-        <img src="/about.jpeg" alt="Rakesh" className="about-image" />
+        <img
+          src="/src/assets/Rakesh.jpeg"
+          alt="Rakesh"
+          className="about-image"
+        />
         <div>
           <h2 className="about-heading">About Me</h2>
           <ul className="about-list">
-            <li>Graduate student at UMKC</li>
-            <li>Ex Software Engineer @ Mindtree</li>
-            <li>B.Tech 2021 Grad from GITAM University</li>
+            <li>Software Developer</li>
+            <li>Ex Software Engineer Intern @ Zinnia</li>
+            <li>Graduate student from University of Missouri Kansas City</li>
             <li>Love learning new technologies</li>
           </ul>
         </div>
