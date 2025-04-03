@@ -1,0 +1,42 @@
+.toggle-switch {
+    width: 48px;
+    height: 24px;
+    border-radius: 9999px;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    border: 1px solid #cbd5e1;
+  }
+  
+  .toggle-switch:hover {
+    background-color: #d1d5db;
+  }
+  
+  .dark .toggle-switch {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+  
+  .toggle-icon {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    color: #facc15;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: translateX(0);
+  }
+  
+  .dark .toggle-icon {
+    transform: translateX(24px);
+    background-color: #0f172a;
+    color: #38bdf8;
+  }
+  

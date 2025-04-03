@@ -1,0 +1,239 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #f0f9ff, #ffffff);
+  overflow: hidden;
+  animation: fadeSlideUp 0.6s ease-out both;
+  z-index: 1;
+}
+
+.dark .home {
+  background: linear-gradient(to bottom, #111827, #1f2937);
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔵 Glowing background blob */
+.home-blob {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 30% 30%, #0ea5e9, #0284c7);
+  opacity: 0.15;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(100px);
+  animation: floatBlob 10s ease-in-out infinite alternate;
+}
+
+@keyframes floatBlob {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-52%, -48%) scale(1.05);
+  }
+}
+
+/* Heading */
+.home h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.6s ease-out both;
+}
+
+@media (min-width: 640px) {
+  .home h1 {
+    font-size: 3rem;
+  }
+}
+
+.dark .home h1 {
+  color: #ffffff;
+}
+
+.home h1 span {
+  color: #0ea5e9;
+}
+
+.dark .home h1 span {
+  color: #38bdf8;
+}
+
+/* ✨ Typewriter */
+.typewriter-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #0284c7;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+}
+
+.dark .typewriter-text {
+  color: #38bdf8;
+}
+
+/* Subtext */
+.home p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  max-width: 40rem;
+  animation: fadeIn 0.8s ease-out both;
+  animation-delay: 0.2s;
+}
+
+.dark .home p {
+  color: #d1d5db;
+}
+
+/* Buttons */
+.resume-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  animation: fadeIn 1s ease-out both;
+  animation-delay: 0.4s;
+}
+
+@media (min-width: 640px) {
+  .resume-buttons {
+    flex-direction: row;
+  }
+}
+
+.resume-button,
+.download-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.resume-button {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.resume-button:hover {
+  background-color: #0284c7;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.download-button {
+  background-color: #1f2937;
+  color: white;
+}
+
+.download-button:hover {
+  background-color: #111827;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+/* Base styles with bounce animation */
+.social-icons a {
+  color: #0ea5e9;
+  animation: bounce 3s ease-in-out infinite;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: inline-flex;
+}
+
+.dark .social-icons a {
+  color: #38bdf8;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #0284c7;
+}
+
+/* Staggered bounce delays */
+.social-icons a:nth-child(1) {
+  animation-delay: 0s;
+}
+.social-icons a:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.social-icons a:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Bouncing animation keyframes */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-icons a {
+  color: #0ea5e9;
+}
+
+.dark .social-icons a {
+  color: #38bdf8;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #0284c7;
+}
+
+
+/* Reusable */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

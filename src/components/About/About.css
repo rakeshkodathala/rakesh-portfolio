@@ -1,0 +1,111 @@
+.about {
+  padding: 5rem 1.5rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.dark .about {
+  background-color: #0f172a;
+}
+
+.about-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  animation: fadeSlideUp 0.6s ease-out both;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+  }
+}
+
+/* Fade-in from below on load */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-image {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.about-heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #111827;
+  animation: fadeIn 0.6s ease-out both;
+}
+
+.dark .about-heading {
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about-list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: #374151;
+  animation: fadeIn 0.8s ease-out both;
+}
+
+.dark .about-list {
+  color: #d1d5db;
+}
+
+.about-list li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: listFade 0.6s forwards;
+}
+
+.about-list li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.about-list li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.about-list li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.about-list li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes listFade {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

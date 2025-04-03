@@ -1,0 +1,55 @@
+.footer {
+  position: relative;
+  background-color: #f3f4f6; /* Tailwind bg-gray-100 */
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.875rem;
+  color: #4b5563; /* Tailwind text-gray-600 */
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dark .footer {
+  background-color: #1f2937; /* Tailwind gray-800 */
+  color: #9ca3af; /* Tailwind gray-400 */
+}
+
+/* Hover glow effect on text */
+.footer p {
+  transition: color 0.3s ease;
+}
+
+.footer p:hover {
+  color: #0ea5e9;
+}
+
+.dark .footer p:hover {
+  color: #38bdf8;
+}
+
+/* Subtle glowing background animation */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, #0ea5e9 0%, transparent 70%);
+  opacity: 0.04;
+  z-index: 1;
+  animation: footerPulse 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes footerPulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.04;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.05);
+    opacity: 0.07;
+  }
+}

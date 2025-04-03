@@ -1,0 +1,254 @@
+.work {
+  padding: 5rem 1.5rem;
+  background-color: #f9fafb;
+  position: relative;
+}
+
+.dark .work {
+  background-color: #0f172a;
+}
+
+.work-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #111827;
+}
+
+.dark .work-title {
+  color: #ffffff;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Timeline vertical line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #cbd5e1;
+  transform: translateX(-50%);
+}
+
+.dark .timeline::after {
+  background-color: #334155;
+}
+
+/* Each item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Dot at center */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 1.25rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #0ea5e9;
+  border: 3px solid #fff;
+  z-index: 2;
+  box-shadow: 0 0 0 2px #e5e7eb;
+}
+
+.timeline-item.left::before {
+  right: -0.5rem;
+}
+
+.timeline-item.right::before {
+  left: -0.5rem;
+}
+
+.dark .timeline-item::before {
+  border-color: #1e293b;
+  box-shadow: 0 0 0 2px #334155;
+}
+
+/* Year */
+.year-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.dark .year-label {
+  color: #cbd5e1;
+}
+
+.work-card {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-4px);
+}
+
+.dark .work-card {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+.work-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.work-company {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.work-company img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.work-company h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dark .work-company h3 {
+  color: #ffffff;
+}
+
+.work-company p,
+.work-duration {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.dark .work-company p,
+.dark .work-duration {
+  color: #cbd5e1;
+}
+
+.work-desc {
+  font-size: 0.95rem;
+  color: #374151;
+  margin: 0.75rem 0 1rem;
+}
+
+.dark .work-desc {
+  color: #e2e8f0;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tags span {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.tech-tags span:hover {
+  transform: scale(1.1);
+  background-color: #bae6fd;
+}
+
+.dark .tech-tags span {
+  background-color: #0369a1;
+  color: #e0f2fe;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 1.25rem;
+  background-color: #0ea5e9;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  z-index: 10;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px #e5e7eb;
+}
+
+.timeline-dot.left {
+  right: -1.25rem;
+}
+
+.timeline-dot.right {
+  left: -1.25rem;
+}
+
+.dark .timeline-dot {
+  background-color: #0284c7;
+  border-color: #1e293b;
+  box-shadow: 0 0 0 2px #334155;
+}
+
+
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 0.5rem;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 2.5rem;
+    text-align: left !important;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item::before {
+    left: 0;
+  }
+}
