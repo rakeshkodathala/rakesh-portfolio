@@ -1,6 +1,5 @@
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
-//import Typewriter from "typewriter-effect";
 import "./Home.css";
 
 const Home = () => {
@@ -18,28 +17,16 @@ const Home = () => {
         Hi, I'm <span>Rakesh Kumar</span>
       </motion.h1>
 
-      {/* 🖋 Typing effect */}
-      <motion.div
-        className="typewriter-text"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+      {/* ✨ Animated subtitle instead of Typewriter */}
+      <motion.h3
+        className="subtitle"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.4, duration: 0.6 }}
       >
-        <Typewriter
-          options={{
-            strings: [
-              "Software Engineer",
-              "Full Stack Developer",
-              "Tech Enthusiast",
-            ],
-            autoStart: true,
-            loop: true,
-            delay: 60,
-            deleteSpeed: 40,
-          }}
-        />
-      </motion.div>
+        Software Engineer · Full Stack Developer · Tech Enthusiast
+      </motion.h3>
 
       <motion.p
         initial={{ opacity: 0 }}

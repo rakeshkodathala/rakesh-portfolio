@@ -80,8 +80,8 @@
   color: #38bdf8;
 }
 
-/* ✨ Typewriter */
-.typewriter-text {
+/* ✨ Subtitle (replaces typewriter) */
+.subtitle {
   font-size: 1.25rem;
   font-weight: 500;
   color: #0284c7;
@@ -89,11 +89,11 @@
   min-height: 2rem;
 }
 
-.dark .typewriter-text {
+.dark .subtitle {
   color: #38bdf8;
 }
 
-/* Subtext */
+/* Description */
 .home p {
   font-size: 1.125rem;
   color: #4b5563;
@@ -167,7 +167,7 @@
   margin-top: 2.5rem;
 }
 
-/* Base styles with bounce animation */
+/* Bounce animation */
 .social-icons a {
   color: #0ea5e9;
   animation: bounce 3s ease-in-out infinite;
@@ -179,7 +179,6 @@
   color: #38bdf8;
 }
 
-/* Hover effect */
 .social-icons a:hover {
   transform: scale(1.2);
   color: #0284c7;
@@ -196,7 +195,6 @@
   animation-delay: 0.6s;
 }
 
-/* Bouncing animation keyframes */
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -206,29 +204,7 @@
   }
 }
 
-
-@keyframes floatIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.social-icons a {
-  color: #0ea5e9;
-}
-
-.dark .social-icons a {
-  color: #38bdf8;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-  color: #0284c7;
-}
-
-
-/* Reusable */
+/* Reusable fade animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
