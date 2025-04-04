@@ -8,7 +8,7 @@ const workExperience = [
     company: "HCL",
     year: "2025",
     icon: <FaBriefcase />, // 🎯 Add this
-    logo: "/src/assets/hcl.jpeg",
+    logo: "hcl.jpeg",
     location: "Irving, TX",
     duration: "Jun 2021 – May 2022",
     description:
@@ -20,7 +20,7 @@ const workExperience = [
     company: "Zinnia LLC",
     year: "2023",
     icon: <FaLaptopCode />, // 💻 Add this
-    logo: "/src/assets/Zinnia.jpeg",
+    logo: "Zinnia.jpeg",
     location: "Topeka, KS",
     duration: "May 2023 – Dec 2023",
     description:
@@ -32,7 +32,7 @@ const workExperience = [
     company: "Mindtree",
     year: "2021",
     icon: <FaLaptopCode />, // 💻 Add this
-    logo: "/src/assets//mindtree.png",
+    logo: "mindtree.png",
     location: "Hyderabad, India",
     duration: "Jun 2021 – May 2022",
     description:
@@ -44,7 +44,7 @@ const workExperience = [
     company: "OLX",
     year: "2020",
     icon: <FaLaptopCode />, // 💻 Add this
-    logo: "/src/assets//olx.jpeg",
+    logo: "olx.jpeg",
     location: "Hyderabad, India",
     duration: "Nov 2019 – May 2021",
     description:
