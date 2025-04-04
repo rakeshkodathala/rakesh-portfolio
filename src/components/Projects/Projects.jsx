@@ -6,18 +6,18 @@ const projects = [
   {
     title: "ChatApp",
     description:
-      "Point-of-Sale application for brand & inventory management. Supports invoicing, reporting, and CRUD operations.",
-    image: "chatapp.png",
-    tech: ["Spring Boot", "Hibernate", "Thymeleaf", "MySQL"],
-    github: "https://github.com/artiam99/Increff_Point_of_Sale",
-    demo: "",
+      "Developed a real time chat application using MERN stack to brush up my knowledge.",
+    image: "chat.png",
+    tech: ["NodeJS", "ExpressJS", "React", "MongoDB"],
+    github: "https://github.com/rakeshkodathala/chatApp",
+    demo: "https://chat-app-82m6.vercel.app/",
   },
   {
     title: "YoutubeClone",
     description:
       "Point-of-Sale application for brand & inventory management. Supports invoicing, reporting, and CRUD operations.",
     image: "yt.png",
-    tech: ["Spring Boot", "Hibernate", "Thymeleaf", "MySQL"],
+    tech: ["MongoDB", "Hibernate", "Thymeleaf", "MySQL"],
     github: "https://github.com/artiam99/Increff_Point_of_Sale",
     demo: "",
   },
@@ -26,20 +26,28 @@ const projects = [
     description:
       "Real-time strategic board game with multiplayer functionality. Players aim to form 'mills' and eliminate opponent's pieces.",
     image: "nine-men.jpeg",
-    tech: ["Next.js", "Node.js", "React", "MongoDB", "Socket.IO"],
+    tech: [
+      "C#",
+      ".NET",
+      "WPF",
+      "Visual Studio 2019",
+      "Web Sockets",
+      "Design Patterns",
+      "OOP",
+    ],
     github: "https://github.com/rakeshkodathala/Nine-Men-Morris-game",
     demo: "https://your-demo-link.com",
   },
 
-  {
-    title: "POS System - Increff",
-    description:
-      "Point-of-Sale application for brand & inventory management. Supports invoicing, reporting, and CRUD operations.",
-    image: "/pos.jpg",
-    tech: ["Spring Boot", "Hibernate", "Thymeleaf", "MySQL"],
-    github: "https://github.com/artiam99/Increff_Point_of_Sale",
-    demo: "",
-  },
+  // {
+  //   title: "POS System - Increff",
+  //   description:
+  //     "Point-of-Sale application for brand & inventory management. Supports invoicing, reporting, and CRUD operations.",
+  //   image: "/pos.jpg",
+  //   tech: ["Spring Boot", "Hibernate", "Thymeleaf", "MySQL"],
+  //   github: "https://github.com/artiam99/Increff_Point_of_Sale",
+  //   demo: "",
+  // },
 ];
 
 const Projects = () => {
