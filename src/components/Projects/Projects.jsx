@@ -17,8 +17,8 @@ const projects = [
     description:
       "Point-of-Sale application for brand & inventory management. Supports invoicing, reporting, and CRUD operations.",
     image: "yt.png",
-    tech: ["MongoDB", "Hibernate", "Thymeleaf", "MySQL"],
-    github: "https://github.com/artiam99/Increff_Point_of_Sale",
+    tech: ["MongoDB", "ExpressJS", "React", "NodeJS"],
+    github: "",
     demo: "",
   },
   {
