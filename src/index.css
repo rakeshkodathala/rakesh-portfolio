@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: white;
   color: #1a1a1a;
 }
+
 
 
 img.favicon {
