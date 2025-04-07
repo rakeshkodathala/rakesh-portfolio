@@ -33,14 +33,7 @@ const Home = () => {
         viewport={{ once: true }}
         transition={{ delay: 0.5 }}
       >
-        Software Developer with 4+ years of experience building high-performance
-        web applications, I specialize in JavaScript, TypeScript, and Node.js,
-        leveraging modern frameworks like React, Vue.js, and AngularJS. My
-        expertise includes backend development, API integration, cloud
-        infrastructure (AWS), and system optimization. I thrive in Agile teams,
-        contributing to microservices, CI/CD pipelines, and security best
-        practices. Passionate about solving complex challenges, writing clean
-        code, and delivering impactful solutions.
+        Software Developer. Passionate about building cool stuff.
       </motion.p>
 
       {/* 📄 Resume Buttons */}
