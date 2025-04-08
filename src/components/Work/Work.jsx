@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaBriefcase, FaLaptopCode } from "react-icons/fa";
+import { FaBriefcase, FaLaptopCode, FaIdBadge, FaCode } from "react-icons/fa";
 import "./Work.css";
 
 const workExperience = [
@@ -19,13 +19,12 @@ const workExperience = [
     role: "Software Engineer Intern",
     company: "Zinnia LLC",
     year: "2023",
-    icon: <FaLaptopCode />, // 💻 Add this
+    icon: <FaCode />, // 💻 Add this
     logo: "Zinnia.jpeg",
     location: "Topeka, KS",
     duration: "May 2023 – Dec 2023",
-    description:
-      "Developed POS system and backend features for StoreJini platform using Spring, Hibernate, Thymeleaf, and MySQL.",
-    tech: ["React", ".NET", "JavaScript", "MySQL"],
+    description: "Migrated a Legacy application from VB Script to NodeJS ",
+    tech: ["React", "NodeJS", "ExpressJS", "MySQL", "SSIS"],
   },
   {
     role: "Software Engineer",
@@ -36,14 +35,14 @@ const workExperience = [
     location: "Hyderabad, India",
     duration: "Jun 2021 – May 2022",
     description:
-      "Developed POS system and backend features for StoreJini platform using Spring, Hibernate, Thymeleaf, and MySQL.",
+      "Worked with Lincoln Financial Group. Built backend APIs and enterprise-level features using Java, Spring Boot, and MySQL.",
     tech: ["Spring", "Hibernate", "Java", "MySQL"],
   },
   {
     role: "Junior Software Engineer",
     company: "OLX",
     year: "2020",
-    icon: <FaLaptopCode />, // 💻 Add this
+    icon: <FaIdBadge />, // 💻 Add this
     logo: "olx.jpeg",
     location: "Hyderabad, India",
     duration: "Nov 2019 – May 2021",
