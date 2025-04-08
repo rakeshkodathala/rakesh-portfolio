@@ -28,17 +28,21 @@ import {
   SiIntellijidea,
   SiBootstrap,
   SiJupyter,
+  SiDotnet,
 } from "react-icons/si";
 import "./Skills.css";
 
 const categories = {
   Languages: [
+    { name: "TypeScript", icon: <SiTypescript /> },
     { name: "Java", icon: <FaJava /> },
+
     { name: "Python", icon: <FaPython /> },
     { name: "JavaScript", icon: <FaJs /> },
-    { name: "TypeScript", icon: <SiTypescript /> },
+
     { name: "SQL", icon: <SiMysql /> },
-    { name: "C/C++", icon: <span className="text-sm font-semibold">C++</span> },
+    { name: "C/C++", icon: <span className="text-sm font-semibold"></span> },
+    { name: "C#", icon: <span className="text-sm font-semibold"></span> },
   ],
   Databases: [
     { name: "MySQL", icon: <SiMysql /> },
@@ -46,10 +50,12 @@ const categories = {
     { name: "MongoDB", icon: <SiMongodb /> },
   ],
   Frameworks: [
+    { name: "Node.js", icon: <FaNodeJs /> },
     { name: "Spring Boot", icon: <SiSpringboot /> },
+    { name: ".NET", icon: <SiDotnet /> },
     { name: "Django", icon: <SiDjango /> },
     { name: "React", icon: <FaReact /> },
-    { name: "Node.js", icon: <FaNodeJs /> },
+
     { name: "AngularJS", icon: <FaAngular /> },
   ],
   Web: [
