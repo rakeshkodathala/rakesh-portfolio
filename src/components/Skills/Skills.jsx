@@ -1,36 +1,72 @@
 import { motion } from "framer-motion";
+import {
+  FaReact,
+  FaJava,
+  FaPython,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaGitAlt,
+  FaGithub,
+  FaDocker,
+  FaJenkins,
+  FaLinux,
+  FaWindows,
+  FaNodeJs,
+  FaAngular,
+  FaAmazon,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiMongodb,
+  SiPostgresql,
+  SiMysql,
+  SiDjango,
+  SiSpringboot,
+  SiKubernetes,
+  SiJira,
+  SiIntellijidea,
+  SiBootstrap,
+  SiJupyter,
+} from "react-icons/si";
 import "./Skills.css";
 
-const skills = [
-  "C/C++",
-  "Java",
-  "JavaScript",
-  "Spring",
-  "Hibernate",
-  "MySQL",
-  "DSA",
-  "Node.js",
-  "React.js",
-  "MongoDB",
-  "Linux",
-  "Git & GitHub",
-  "Xcode",
-  "IntelliJ",
-  "VS Code",
-  "Jira",
-];
-
-const fadeUpVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.05,
-      duration: 0.4,
-      ease: "easeOut",
-    },
-  }),
+const categories = {
+  Languages: [
+    { name: "Java", icon: <FaJava /> },
+    { name: "Python", icon: <FaPython /> },
+    { name: "JavaScript", icon: <FaJs /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "SQL", icon: <SiMysql /> },
+    { name: "C/C++", icon: <span>C++</span> },
+  ],
+  Databases: [
+    { name: "MySQL", icon: <SiMysql /> },
+    { name: "PostgreSQL", icon: <SiPostgresql /> },
+    { name: "MongoDB", icon: <SiMongodb /> },
+  ],
+  Frameworks: [
+    { name: "Spring Boot", icon: <SiSpringboot /> },
+    { name: "Django", icon: <SiDjango /> },
+    { name: "React", icon: <FaReact /> },
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "AngularJS", icon: <FaAngular /> },
+  ],
+  Web: [
+    { name: "HTML5", icon: <FaHtml5 /> },
+    { name: "CSS3", icon: <FaCss3Alt /> },
+    { name: "Bootstrap", icon: <SiBootstrap /> },
+    { name: "REST APIs", icon: <span></span> },
+  ],
+  Tools: [
+    { name: "Git", icon: <FaGitAlt /> },
+    { name: "GitHub", icon: <FaGithub /> },
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "Kubernetes", icon: <SiKubernetes /> },
+    { name: "Jira", icon: <SiJira /> },
+    { name: "Jenkins", icon: <FaJenkins /> },
+  ],
+  Cloud: [{ name: "AWS", icon: <FaAmazon /> }],
 };
 
 const Skills = () => {
@@ -47,23 +83,26 @@ const Skills = () => {
           Skills
         </motion.h2>
 
-        <motion.div
-          className="skills-list"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {skills.map((skill, i) => (
-            <motion.span
-              key={skill}
-              className="skill-tag"
-              variants={fadeUpVariants}
-              custom={i}
-            >
-              {skill}
-            </motion.span>
-          ))}
-        </motion.div>
+        {Object.entries(categories).map(([category, skills], index) => (
+          <motion.div
+            key={category}
+            className="skills-category"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
+          >
+            <h3>{category}</h3>
+            <div className="skills-list">
+              {skills.map((skill, i) => (
+                <span key={i} className="skill-tag">
+                  <span className="skill-icon">{skill.icon}</span>
+                  {skill.name}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

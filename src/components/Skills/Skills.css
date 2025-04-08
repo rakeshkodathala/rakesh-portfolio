@@ -1,7 +1,7 @@
 .skills {
   padding: 5rem 1.5rem;
   background-color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 
 .dark .skills {
@@ -30,9 +30,21 @@
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 1rem;
 }
+
+.skills-category h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1f2937; /* Tailwind text-gray-800 */
+}
+
+.dark .skills-category h3 {
+  color: #f3f4f6; /* Tailwind text-gray-100 */
+}
+
 
 /* Skill chip style */
 .skill-tag {
@@ -79,3 +91,6 @@
     transform: translateY(0);
   }
 }
+
+/* Category titles */
+

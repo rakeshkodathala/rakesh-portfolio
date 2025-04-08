@@ -12,8 +12,8 @@ const workExperience = [
     location: "Irving, TX",
     duration: "Jun 2021 – May 2022",
     description:
-      "Worked with Lincoln Financial Group. Built backend APIs and enterprise-level features using Java, Spring Boot, and MySQL.",
-    tech: ["Java", "Spring Boot", "React", "NodeJS", "MySQL"],
+      "Developed and deployed a scalable backend system using Node.js and AWS services (EC2, S3, ELB), written 30 RESTful APIs",
+    tech: ["JavaScript", "TypeScript", "React", "NodeJS", "AWS"],
   },
   {
     role: "Software Engineer Intern",
@@ -47,8 +47,8 @@ const workExperience = [
     location: "Hyderabad, India",
     duration: "Nov 2019 – May 2021",
     description:
-      "Developed POS system and backend features for StoreJini platform using Spring, Hibernate, Thymeleaf, and MySQL.",
-    tech: ["NodeJS", "JavaScript", "Java", "MySQL"],
+      "Developed and optimized responsive SPAs using React.js and JavaScript within a micro frontend setup, improved page performance and user engagement.",
+    tech: ["NodeJS", "JavaScript", "ReactJS", "MySQL"],
   },
 ];
 
