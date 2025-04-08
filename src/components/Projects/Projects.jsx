@@ -18,7 +18,7 @@ const projects = [
       "Point-of-Sale application for brand & inventory management. Supports invoicing, reporting, and CRUD operations.",
     image: "yt.png",
     tech: ["MongoDB", "ExpressJS", "React", "NodeJS"],
-    github: "",
+    github: "https://github.com/rakeshkodathala/youtube-clone",
     demo: "",
   },
   {
