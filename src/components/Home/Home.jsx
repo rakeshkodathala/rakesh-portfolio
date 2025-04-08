@@ -1,4 +1,10 @@
-import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {
+  FaDownload,
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaCode,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 import TypingText from "../TypingText/TypingText"; // adjust if needed
 import "./Home.css";
@@ -88,6 +94,14 @@ const Home = () => {
         </a>
         <a href="mailto:rakeshkodathala@gmail.com" title="Email">
           <FaEnvelope />
+        </a>
+        <a
+          href="https://leetcode.com/u/Rakesh_kodathala/"
+          target="_blank"
+          rel="noreferrer"
+          title="LeetCode"
+        >
+          <FaCode />
         </a>
       </motion.div>
     </section>
