@@ -1,6 +1,6 @@
 .about {
   padding: 5rem 1.5rem;
-  background-color: white;
+  background-color: #ffffff;
   overflow: hidden;
 }
 
@@ -21,10 +21,10 @@
 @media (min-width: 768px) {
   .about-container {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 
-/* Fade-in from below on load */
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
@@ -50,10 +50,16 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* Content section beside image */
+.about-content {
+  flex: 1;
+}
+
+/* Heading */
 .about-heading {
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   color: #111827;
   animation: fadeIn 0.6s ease-out both;
 }
@@ -62,15 +68,20 @@
   color: #ffffff;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* Intro paragraph */
+.about-intro {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.7s ease-out both;
 }
 
+.dark .about-intro {
+  color: #d1d5db;
+}
+
+/* Skill list */
 .about-list {
   list-style-type: disc;
   padding-left: 1.25rem;
@@ -90,22 +101,19 @@
   animation: listFade 0.6s forwards;
 }
 
-.about-list li:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.about-list li:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.about-list li:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.about-list li:nth-child(4) {
-  animation-delay: 0.8s;
-}
+.about-list li:nth-child(1) { animation-delay: 0.2s; }
+.about-list li:nth-child(2) { animation-delay: 0.4s; }
+.about-list li:nth-child(3) { animation-delay: 0.6s; }
+.about-list li:nth-child(4) { animation-delay: 0.8s; }
 
 @keyframes listFade {
   to {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

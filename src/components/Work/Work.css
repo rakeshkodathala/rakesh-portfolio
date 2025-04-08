@@ -9,7 +9,7 @@
 }
 
 .work-title {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 4rem;
@@ -20,7 +20,6 @@
   color: #ffffff;
 }
 
-/* Timeline container */
 .timeline {
   position: relative;
   max-width: 1024px;
@@ -28,7 +27,6 @@
   padding: 2rem 0;
 }
 
-/* Timeline vertical line */
 .timeline::after {
   content: "";
   position: absolute;
@@ -38,13 +36,13 @@
   width: 3px;
   background-color: #cbd5e1;
   transform: translateX(-50%);
+  z-index: 0;
 }
 
 .dark .timeline::after {
   background-color: #334155;
 }
 
-/* Each item */
 .timeline-item {
   position: relative;
   width: 50%;
@@ -54,7 +52,7 @@
 
 .timeline-item.left {
   left: 0;
-  text-align: right;
+  text-align: left;
 }
 
 .timeline-item.right {
@@ -62,18 +60,58 @@
   text-align: left;
 }
 
-/* Dot at center */
+.year-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #6b7280;
+}
+
+.dark .year-label {
+  color: #cbd5e1;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #0ea5e9;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 9999px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.timeline-dot.left {
+  right: -1.25rem;
+}
+
+.timeline-dot.right {
+  left: -1.25rem;
+}
+
+.dark .timeline-dot {
+  background-color: #0284c7;
+  border-color: #1e293b;
+  box-shadow: 0 0 0 2px #334155;
+}
+
 .timeline-item::before {
   content: "";
   position: absolute;
   top: 1.25rem;
   width: 1rem;
   height: 1rem;
-  border-radius: 50%;
   background-color: #0ea5e9;
+  border-radius: 50%;
   border: 3px solid #fff;
-  z-index: 2;
-  box-shadow: 0 0 0 2px #e5e7eb;
+  z-index: 1;
 }
 
 .timeline-item.left::before {
@@ -89,24 +127,12 @@
   box-shadow: 0 0 0 2px #334155;
 }
 
-/* Year */
-.year-label {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #6b7280;
-  margin-bottom: 0.75rem;
-}
-
-.dark .year-label {
-  color: #cbd5e1;
-}
-
 .work-card {
   background-color: #ffffff;
   padding: 1.5rem 2rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -125,7 +151,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .work-company {
@@ -134,31 +160,34 @@
   gap: 1rem;
 }
 
-.work-company img {
+.work-logo {
   width: 3rem;
   height: 3rem;
-  object-fit: cover;
   border-radius: 0.5rem;
+  object-fit: contain; /* Changed from cover to contain */
+  background-color: white; /* Optional: adds a background for contrast */
+  padding: 0.25rem; /* Optional: spacing inside image box */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.work-company h3 {
+
+.work-role {
   font-size: 1.125rem;
   font-weight: 600;
   color: #111827;
 }
 
-.dark .work-company h3 {
+.dark .work-role {
   color: #ffffff;
 }
 
-.work-company p,
+.work-location,
 .work-duration {
   font-size: 0.875rem;
   color: #6b7280;
 }
 
-.dark .work-company p,
+.dark .work-location,
 .dark .work-duration {
   color: #cbd5e1;
 }
@@ -179,7 +208,7 @@
   gap: 0.5rem;
 }
 
-.tech-tags span {
+.tech-tag {
   background-color: #e0f2fe;
   color: #0284c7;
   font-size: 0.75rem;
@@ -189,49 +218,17 @@
   transition: transform 0.2s ease;
 }
 
-.tech-tags span:hover {
+.tech-tag:hover {
   transform: scale(1.1);
   background-color: #bae6fd;
 }
 
-.dark .tech-tags span {
+.dark .tech-tag {
   background-color: #0369a1;
   color: #e0f2fe;
 }
 
-.timeline-dot {
-  position: absolute;
-  top: 1.25rem;
-  background-color: #0ea5e9;
-  color: white;
-  width: 2rem;
-  height: 2rem;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  z-index: 10;
-  border: 3px solid #ffffff;
-  box-shadow: 0 0 0 2px #e5e7eb;
-}
-
-.timeline-dot.left {
-  right: -1.25rem;
-}
-
-.timeline-dot.right {
-  left: -1.25rem;
-}
-
-.dark .timeline-dot {
-  background-color: #0284c7;
-  border-color: #1e293b;
-  box-shadow: 0 0 0 2px #334155;
-}
-
-
-/* Responsive fix for mobile */
+/* Responsive */
 @media (max-width: 768px) {
   .timeline::after {
     left: 0.5rem;
@@ -248,7 +245,13 @@
     left: 0;
   }
 
+  .timeline-dot {
+    left: 0;
+    right: auto;
+  }
+
   .timeline-item::before {
     left: 0;
+    right: auto;
   }
 }

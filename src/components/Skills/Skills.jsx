@@ -38,7 +38,7 @@ const categories = {
     { name: "JavaScript", icon: <FaJs /> },
     { name: "TypeScript", icon: <SiTypescript /> },
     { name: "SQL", icon: <SiMysql /> },
-    { name: "C/C++", icon: <span>C++</span> },
+    { name: "C/C++", icon: <span className="text-sm font-semibold">C++</span> },
   ],
   Databases: [
     { name: "MySQL", icon: <SiMysql /> },
@@ -56,7 +56,10 @@ const categories = {
     { name: "HTML5", icon: <FaHtml5 /> },
     { name: "CSS3", icon: <FaCss3Alt /> },
     { name: "Bootstrap", icon: <SiBootstrap /> },
-    { name: "REST APIs", icon: <span></span> },
+    {
+      name: "REST APIs",
+      icon: <span className="text-sm font-medium">API</span>,
+    },
   ],
   Tools: [
     { name: "Git", icon: <FaGitAlt /> },
@@ -92,7 +95,7 @@ const Skills = () => {
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
           >
-            <h3>{category}</h3>
+            <h3 className="skills-category-title">{category}</h3>
             <div className="skills-list">
               {skills.map((skill, i) => (
                 <span key={i} className="skill-tag">

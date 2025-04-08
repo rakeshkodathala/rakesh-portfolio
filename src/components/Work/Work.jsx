@@ -7,7 +7,7 @@ const workExperience = [
     role: "Software Developer",
     company: "HCL",
     year: "2025",
-    icon: <FaBriefcase />, // 🎯 Add this
+    icon: <FaBriefcase />,
     logo: "hcl.jpeg",
     location: "Irving, TX",
     duration: "Jun 2021 – May 2022",
@@ -19,7 +19,7 @@ const workExperience = [
     role: "Software Engineer Intern",
     company: "Zinnia LLC",
     year: "2023",
-    icon: <FaCode />, // 💻 Add this
+    icon: <FaCode />,
     logo: "Zinnia.jpeg",
     location: "Topeka, KS",
     duration: "May 2023 – Dec 2023",
@@ -30,7 +30,7 @@ const workExperience = [
     role: "Software Engineer",
     company: "Mindtree",
     year: "2021",
-    icon: <FaLaptopCode />, // 💻 Add this
+    icon: <FaLaptopCode />,
     logo: "mindtree.png",
     location: "Hyderabad, India",
     duration: "Jun 2021 – May 2022",
@@ -42,7 +42,7 @@ const workExperience = [
     role: "Junior Software Engineer",
     company: "OLX",
     year: "2020",
-    icon: <FaIdBadge />, // 💻 Add this
+    icon: <FaIdBadge />,
     logo: "olx.jpeg",
     location: "Hyderabad, India",
     duration: "Nov 2019 – May 2021",
@@ -55,7 +55,15 @@ const workExperience = [
 const Work = () => {
   return (
     <section id="work" className="work">
-      <h2 className="work-title">Work Experience</h2>
+      <motion.h2
+        className="work-title"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        Work Experience
+      </motion.h2>
 
       <div className="timeline">
         {workExperience.map((job, index) => (
@@ -63,10 +71,8 @@ const Work = () => {
             key={index}
             className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
           >
-            {/* Year Label */}
             <div className="year-label">{job.year}</div>
 
-            {/* Icon Dot */}
             <div
               className={`timeline-dot ${index % 2 === 0 ? "left" : "right"}`}
               title={job.role}
@@ -74,7 +80,6 @@ const Work = () => {
               {job.icon}
             </div>
 
-            {/* Work Card */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -84,12 +89,12 @@ const Work = () => {
             >
               <div className="work-top">
                 <div className="work-company">
-                  <img src={job.logo} alt={job.company} />
-                  <div>
-                    <h3>
-                      {job.role} @ {job.company}
+                  <img src={job.logo} alt={job.company} className="work-logo" />
+                  <div className="work-meta">
+                    <h3 className="work-role">
+                      {job.role} @ <span>{job.company}</span>
                     </h3>
-                    <p>{job.location}</p>
+                    <p className="work-location">{job.location}</p>
                   </div>
                 </div>
                 <span className="work-duration">{job.duration}</span>
@@ -99,7 +104,9 @@ const Work = () => {
 
               <div className="tech-tags">
                 {job.tech.map((tech, i) => (
-                  <span key={i}>{tech}</span>
+                  <span key={i} className="tech-tag">
+                    {tech}
+                  </span>
                 ))}
               </div>
             </motion.div>

@@ -21,7 +21,7 @@ const Home = () => {
 
       {/* ✨ Typewriter subtitle */}
       <TypingText
-        texts={["Software Engineer", "Full Stack Developer", "Tech Enthusiast"]}
+        texts={["Software Engineer", "Developer", "Coder"]}
         speed={80}
         pause={1500}
       />
