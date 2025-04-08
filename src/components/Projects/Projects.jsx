@@ -19,7 +19,7 @@ const projects = [
     image: "yt.png",
     tech: ["MongoDB", "ExpressJS", "React", "NodeJS"],
     github: "https://github.com/rakeshkodathala/youtube-clone",
-    demo: "",
+    demo: "www.youtube.com",
   },
   {
     title: "Nine Men's Morris Game",
