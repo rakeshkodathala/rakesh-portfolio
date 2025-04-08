@@ -22,7 +22,7 @@ const About = () => {
 
           <ul className="about-list">
             <li>💼 Software Developer</li>
-            <li>🎓 Graduate Student @ University of Missouri – Kansas City</li>
+            <li>🎓 Graduate Student @ University of Missouri</li>
             <li>🛠 Currently exploring modern tech & system design</li>
             <li>🚀 Passionate about learning, building & growing</li>
           </ul>
