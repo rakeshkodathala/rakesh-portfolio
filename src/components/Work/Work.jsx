@@ -10,7 +10,7 @@ const workExperience = [
     icon: <FaBriefcase />,
     logo: "hcl.jpeg",
     location: "Irving, TX",
-    duration: "Jun 2021 – May 2022",
+    duration: "Jan 2024 – present",
     description:
       "Developed and deployed a scalable backend system using Node.js and AWS services (EC2, S3, ELB), written 30 RESTful APIs",
     tech: ["JavaScript", "TypeScript", "React", "NodeJS", "AWS"],
