@@ -21,7 +21,7 @@ const About = () => {
           </p>
 
           <ul className="about-list">
-            <li>💼 Software Developer</li>
+            <li>💼 Software Development Engineer @ Amazon</li>
             <li>🎓 Graduate Student @ University of Missouri</li>
             <li>🛠 Currently exploring modern tech & system design</li>
             <li>🚀 Passionate about learning, building & growing</li>

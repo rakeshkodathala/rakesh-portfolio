@@ -16,10 +16,10 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            📧 rakeshkodathala@gmail.com
+            📧 rakeshreddy98666@gmail.com
           </a>
           <a
-            href="https://www.linkedin.com/in/rakesh-kumar-44304b324/"
+            href="https://www.linkedin.com/in/rakesh-kumar-107740199/"
             target="_blank"
             rel="noreferrer"
           >

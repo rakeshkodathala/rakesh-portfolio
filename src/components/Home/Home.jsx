@@ -51,7 +51,7 @@ const Home = () => {
         transition={{ delay: 0.7 }}
       >
         <a
-          href="https://drive.google.com/file/d/1ydXHjDIvGVSWidQxSfTeVRl8mWyLjyl7/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1y57SSIB06p8FYeDK7IkTWPOh6Nm0PtUb/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="resume-button"
@@ -59,8 +59,8 @@ const Home = () => {
           View Resume
         </a>
         <a
-          href="/src/assets/Rakesh_Reddy_SD.pdf"
-          download="Rakesh_Kumar_Resume.pdf"
+          href="/src/assets/Rakesh_Resume.pdf"
+          download="Rakesh_Resume.pdf"
           className="download-button"
         >
           <FaDownload />
@@ -85,14 +85,14 @@ const Home = () => {
           <FaGithub />
         </a>
         <a
-          href="https://www.linkedin.com/in/rakesh-kumar-44304b324/"
+          href="https://www.linkedin.com/in/rakesh-kumar-107740199/"
           target="_blank"
           rel="noreferrer"
           title="LinkedIn"
         >
           <FaLinkedin />
         </a>
-        <a href="mailto:rakeshkodathala@gmail.com" title="Email">
+        <a href="mailto:rakeshreddy98666@gmail.com" title="Email">
           <FaEnvelope />
         </a>
         <a

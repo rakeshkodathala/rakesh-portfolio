@@ -4,16 +4,16 @@ import "./Work.css";
 
 const workExperience = [
   {
-    role: "Software Developer",
-    company: "HCL",
+    role: "Software Engineer",
+    company: "Walmart",
     year: "2025",
     icon: <FaBriefcase />,
-    logo: "hcl.jpeg",
-    location: "Irving, TX",
+    logo: "walmart.png",
+    location: "Remote",
     duration: "Jan 2024 – present",
     description:
-      "Developed and deployed a scalable backend system using Node.js and AWS services (EC2, S3, ELB), written 30 RESTful APIs",
-    tech: ["JavaScript", "TypeScript", "React", "NodeJS", "AWS"],
+      "Developed and deployed a scalable backend system using Java, SpringBoot and AWS services (EC2, S3, ELB), written 30 RESTful APIs",
+    tech: ["Java", "JavaScript", "React", "SpringBoot", "AWS"],
   },
   {
     role: "Software Engineer Intern",
@@ -37,18 +37,6 @@ const workExperience = [
     description:
       "Worked with Lincoln Financial Group. Built backend APIs and enterprise-level features using Java, Spring Boot, and MySQL.",
     tech: ["Spring", "Hibernate", "Java", "MySQL"],
-  },
-  {
-    role: "Junior Software Engineer",
-    company: "OLX",
-    year: "2020",
-    icon: <FaIdBadge />,
-    logo: "olx.jpeg",
-    location: "Hyderabad, India",
-    duration: "Nov 2019 – May 2021",
-    description:
-      "Developed and optimized responsive SPAs using React.js and JavaScript within a micro frontend setup, improved page performance and user engagement.",
-    tech: ["NodeJS", "JavaScript", "ReactJS", "MySQL"],
   },
 ];
 

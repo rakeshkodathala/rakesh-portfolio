@@ -34,7 +34,6 @@ import "./Skills.css";
 
 const categories = {
   Languages: [
-    { name: "TypeScript", icon: <SiTypescript /> },
     { name: "Java", icon: <FaJava /> },
 
     { name: "Python", icon: <FaPython /> },
