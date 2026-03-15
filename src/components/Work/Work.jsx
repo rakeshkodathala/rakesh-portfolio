@@ -4,6 +4,18 @@ import "./Work.css";
 
 const workExperience = [
   {
+    role: "Software Development Engineer",
+    company: "Amazon",
+    year: "2025",
+    icon: <FaBriefcase />,
+    logo: "amazon.png",
+    location: "Seattle, WA",
+    duration: "Aug 2025 – present",
+    description:
+      "Building scalable systems and services as part of Amazon's engineering team.",
+    tech: ["Java", "AWS", "Distributed Systems"],
+  },
+  {
     role: "Software Engineer",
     company: "Walmart",
     year: "2025",
